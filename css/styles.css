@@ -1,0 +1,93 @@
+:root {
+    --verde: oklch(0.7515 0.1998 141.35);
+    --cian: oklch(0.7067 0.1455 185.82);
+    --fondo: oklch(0.1544 0.0444 275.82);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+@font-face {
+    font-family: 'VT323';
+    src: url('../fuentes/VT323-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1 {
+    color: var(--verde);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 0 1rem 0 1rem;
+    border-color: var(--cian);
+    font-family: 'VT323', monospace;
+    width: fit-content;
+    padding: 0.5em 1em;
+}
+
+body {
+    background-color: var(--fondo);
+    margin:0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--verde);
+}
+
+a {
+    color: var(--cian);
+}
+
+.terminal {
+    font-family: 'VT323', monospace;
+    font-size: 1.3em;
+    color: var(--verde);
+    background-color: var(--fondo);
+    padding: 0 0.3em;
+}
+
+.btn-info {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5em 1em;
+    border: 2px solid var(--cian);
+    border-radius: 0 1rem 0 1rem;
+    background-color: transparent;
+    color: var(--cian);
+    text-decoration: none;
+    font-family: monospace;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-info:hover {
+    background-color: var(--cian);
+    color: var(--fondo);
+}
+
+.icon-github {
+    vertical-align: middle;
+    margin-right: 0.4em;
+}
+
+a:focus-visible {
+    outline: 3px solid var(--cian);
+    outline-offset: 2px;
+}
+
+@media(max-width: 600px) {
+    h1 {
+        font-size: 1.4em;
+        padding: 0.5em;
+    }
+
+    .terminal {
+        font-size: 1.1em;
+    }
+
+    .btn-info {
+        display: block;
+        text-align: center;
+    }
+}
